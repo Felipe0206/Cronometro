@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'lato';
+}
+:root{
+    --background: rgb(255,255,255);
+    --background-linear1: rgba(255,255,255,1);
+    --background-linear2: rgba(255,235,130,1);
+    --container: #353535;
+    --text-color: white;
+    --screen: #353535;
+    --btn-hover: black;
+    --btn-hover-text: #fff56d;
+    --shadow: rgba(48, 45, 45, 0.26);
+}
+span{
+    font-weight: 300;
+    font-size: 100px;
+}
+.c-body{
+    background: var(--background);
+    background: linear-gradient(135deg, rgba(58, 31, 31, 0.705) 0%,rgb(63, 9, 18)  60%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-time{
+    background-color: rgba(177, 17, 17, 0.616);
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 11px 17px 22px 0px var(--shadow);
+}
+.c-time>.screen{
+    color: var(--text-color);
+    background-color: rgba(177, 17, 17, 0);
+    margin: 6px;
+    text-align: center;
+    
+}
+.c-btn{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;    
+    margin: 15px 100px;
+}
+
+
+
+.c-btn>button{    
+    display: block;
+    background: none;
+    border: none;
+    outline: inherit;
+    cursor: pointer;
+
+    height: 80px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: var(--text-color);
+    
+}
+button:hover{
+    transform: scale(1.2);
+    transition: 0.6s;
+    background-color:rgba(177, 17, 17, 0.616) ;
+    color: rgb(34, 9, 17);
+}
+
